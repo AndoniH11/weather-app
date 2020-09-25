@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    color: #333;
+}
+
+header{
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.418); 
+    display: flex;
+    justify-content: flex-end;
+}
+
+input{
+    outline:none;
+    margin: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.61);
+    color: #444;
+}
+#cambiar-boton{
+    height: 30px;
+    width: 80px;
+    margin: 5px;
+    margin-right: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.795);
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+#container{
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    align-self: center;
+    border: 1px solid #444;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#temperatura{
+    text-align: center;
+    font-size: 70px;
+}
+
+#tiempo{
+    text-align: center;
+    margin: 30px;
+}
+
+.icons{
+    width: 125px;
+}
+
+.descripcion{
+    margin: 30px;
+    font-size: 25px;
+}
+
+/* FONDOS DE PANTALLA */
+
+.barcelona{
+    background-image: url('img/barcelona.jpg');
+}
+
+.londres{
+    background-image: url('img/london.jpg');
+}
+
+.sydney{
+    background-image: url('img/sydney.jfif');
+}
+
+.madrid{
+    background-image: url('img/madrid.jpg');
+}
+
+.newyork{
+    background-image: url('img/newYork.jpg');
+}
+
+.rio{
+    background-image: url('img/rio.jpg');
+}
+
+.tokyo{
+    background-image: url('img/tokyo.jpg');
+}
+
+.paris{
+    background-image: url('img/paris.jpg');
+}
+
+.random{
+    background-image: url('img/landscape.jpg');
+}
+
+@media (max-width: 800px){
+    .barcelona{
+        background-image: url('img/barcelona-vertical.jpg');
+    }
+    
+    .londres{
+        background-image: url('img/london-vertical.jpg');
+    }
+    
+    .sydney{
+        background-image: url('img/sydney-vertical.jpg');
+    }
+    
+    .madrid{
+        background-image: url('img/madrid-vertical.jpg');
+    }
+    
+    .newyork{
+        background-image: url('img/newYork-vertical.jpg');
+    }
+    
+    .rio{
+        background-image: url('img/rio-vertical.jpg');
+    }
+    
+    .tokyo{
+        background-image: url('img/tokyo-vertical.jpg');
+    }
+    
+    .paris{
+        background-image: url('img/paris-vertical.jpg');
+    }
+}
+
+@media (max-width: 450px){
+    #container{
+        width: 85vw;
+    }
+
+}
+
