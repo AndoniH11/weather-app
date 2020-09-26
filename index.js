@@ -18,9 +18,9 @@ boton.addEventListener("click", () => {
 async function getTemp() {
     try {
         if (input.value == "") {
-            var promise = await fetch('http://api.openweathermap.org/data/2.5/weather?q=barcelona&APPID=0f5be1a5e46d9f4a4d1190cd358eaf32')
+            var promise = await fetch('https://api.openweathermap.org/data/2.5/weather?q=barcelona&APPID=0f5be1a5e46d9f4a4d1190cd358eaf32')
         } else {
-            var promise = await fetch('http://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&APPID=0f5be1a5e46d9f4a4d1190cd358eaf32')
+            var promise = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&APPID=0f5be1a5e46d9f4a4d1190cd358eaf32')
         }
 
         let response = await promise.json();
